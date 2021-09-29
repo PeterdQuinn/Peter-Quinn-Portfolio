@@ -3,7 +3,7 @@
 Portfolio made to showcase my projects, about me, and contact info. Feel free to improve it!
 
 ## Live Link
-
+https://peterdquinn.github.io/Peter-Quinn-Portfolio/
 
 
 ## Built With
