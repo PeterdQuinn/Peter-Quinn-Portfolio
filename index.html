@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<title>Peter Quinn Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,400,700,900' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-sidebar" id="myNavbar">
+            <a class="w3-bar-item button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+                title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-home fa-2x"></i>
+            </a>
+            <a href="#portfolio" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-th fa-2x"></i>
+            </a>
+            <a href="#about" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-user fa-2x"></i>
+            </a>
+            <a href="#contact" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-envelope fa-2x"></i>
+            </a>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="mobileNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#home" class="w3-bar-item button" onclick="toggleFunction()">HOME</a>
+            <a href="#portfolio" class="w3-bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#about" class="w3-bar-item button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#contact" class="w3-bar-item button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-middle title" style="white-space:nowrap;">
+            <span class="w3-center w3-black w3-xlarge w3-wide">
+                <span class="w3-hide-small">HELLO, I AM</span>
+                <span> PETER QUINN.</span>
+                <br>
+                <span class="w3-hide-small"> A FULL STACK WEB DEVELOPER</span>
+            </span>
+        </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <div class=" w3-container w3-padding-64" id="portfolio">
+        <div class="section bg1"></div>
+        <br>
+        <h3 class="w3-center">Projects</h3>
+        <p class="w3-center">
+            <em> These are some of my favorite projects I 
+                have created so far.
+        </p>
+        <br>
+        <!-- Responsive Grid. Three columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m4">
+                    <div class="card"> 
+                            <img class="card__img" src="./assets/pictures/BarterMart.png" alt="BarterMart">
+                            <h2 class="card__title">BarterMart</h2>
+                            <p class="card__text">AS A user of BarterMart I WANT POST (offer) an item to trade amongst other users.
+                                AS A user I WANT to trade good and services with other users.
+                                AS A user I WANT to be able to manage my Inventory/Post and the offers/comments on each
+                                </p>
+                            <a class="card__btn" href="https://github.com/jidlebir/BarterMart" target="_blank" class="">Live Demo</a>
+                            <a class="card__btn" href="https://bartermart.herokuapp.com/" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+            <div class="w3-col m4">
+                <div class="card"> 
+                        <img class="card__img" src="assets/pictures/Boot-Camp.jpg" alt="Coding Boot-Camp">
+                        <h2 class="card__title">Guide to online Code-Camp</h2>
+                        <p class="card__text"> As a bootcamp student or prospective student,
+                             I would like an application that allows me to see and comment on blog posts from other bootcamp students and industry professionals.
+                            When in need of resources, 
+                            I am presented with a list of useful documents and articles in an easy-to-navigate area. 
+                            When looking for potential bootcamps to attend, 
+                            I am presented with suggestions and posts from other bootcamp students and graduates to help inform my decision. </p>
+                        <a  class="card__btn" href="https://coding-bootcamp-survival-guide.herokuapp.com/" target="_blank" class="">Live Demo</a>
+                        <a class="card__btn" href="https://github.com/Coding-Bootcamp-Survival-Guide/Coding-Bootcamp-Survival-Guide" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                      </div>
+            </div>
+            <div class="w3-col m4">
+                    <div class="card"> 
+                            <img class="card__img" src="assets/pictures/QuickBite.jpg" alt="The Quick Bite">
+                            <h2 class="card__title">The Quick Bite</h2>
+                            <p class="card__text">AS A foodie looking for something to eat in the area
+                                I WANT to easily find a list of restaurants with food I’m craving
+                                SO THAT I CAN make a quick decision on my next meal..</p>
+                            <a class="card__btn" href="https://gwarzecha.github.io/restaurant-search/" target="_blank" class=""> Live Demo</a>
+                            <a class="card__btn" href="https://github.com/gwarzecha/restaurant-search" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+        </div>
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m4">
+                    <div class="card"> 
+                            <img class="card__img" src="assets/pictures/Budget Tracker.png" alt="Budget Tracker">
+                            <h2 class="card__title">Budget Tracker</h2>
+                            <p class="card__text">AS AN avid traveller
+                                I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
+                                SO THAT my account balance is accurate when I am traveling </p>
+                            <a class="card__btn" href="https://github.com/PeterdQuinn/budget-tracker" target="_blank" class="">Demo</a>
+                            <a class="card__btn" href="https://github.com/PeterdQuinn/budget-tracker" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+            <div class="w3-col m4">
+                    <div class="card"> 
+                            <img class="card__img" src="assets/pictures/Dinosuar_Gen.jpg" alt="Dinosuar_Gen">
+                            <h2 class="card__title">Dinosuar_Generator</h2>
+                            <p class="card__text">As a fan of Dinosuars I would like to see my favorites appear on my screen.</p>
+                            <a class="card__btn" href="https://github.com/PeterdQuinn/Dino_Gen-APi-Practice" target="_blank" class="">NOT CURRENTLY HOSTED</a>
+                            <a class="card__btn" href="https://github.com/PeterdQuinn/Dino_Gen-APi-Practice" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+            <div class="w3-col m4">
+                <div class="card"> 
+                        <img class="card__img" src="assets/pictures/Book-Search.jpg" alt="Book-Search">
+                        <h2 class="card__title">Book-Search</h2>
+                        <p class="card__text">AS AN avid reader
+                            I WANT to search for new books to read
+                            SO THAT I can keep a list of books to purchase</p>
+                        <a class="card__btn" href="https://github.com/PeterdQuinn/Book-Search-Mern" class="" target="_blank" disabled>Not Currently Hosted</a>
+                        <a class="card__btn" href="https://github.com/PeterdQuinn/Book-Search-Mern" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                      </div>
+            </div>
+        </div>
+    </div>
+    <!--Tech Icons-->
+    <div class="w3-row w3-center bg1 w3-padding-16">
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/html.svg">
+            <img class="icon" src="assets/icons/css.svg">
+            <img class="icon" src="assets/icons/javascript.svg">
+            <img class="icon" src="assets/icons/jquery.svg">
+        </div>
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/sass.svg">
+            <img class="icon" src="assets/icons/react.svg">
+            <img class="icon" src="assets/icons/node.svg">
+            <img class="icon" src="assets/icons/express.svg">
+        </div>
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/handlebars.svg">
+            <img class="icon" src="assets/icons/mongodb.svg">
+            <img class="icon" src="assets/icons/mysql.svg">
+            <img class="icon" src="assets/icons/github.svg">
+        </div>
+    </div>
+    <!-- Second Parallax Image with About Text -->
+    <div class="bgimg bgimg-2 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">WHO AM I</span>
+        </div>
+    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">Peter Quinn</h3>
+        <div class="w3-row">
+            <div class="u-margin-top-medium">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <div class="profile__section-left">
+                        <div class="image-responsive">
+                            <img class="w3-image image-responsive__picture" src="assets/pictures/Future.jpg" alt="FULL Stack" width="500" height="333">
+                            <div class="image-responsive__overlay">
+                                <h2></h2>
+                                <p class="image-responsive__overlay--set1">
+                                    <a href="https://www.linkedin.com/in/peter-quinn-73ab78200/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://github.com/PeterdQuinn" target="_blank"><i class="fa fa-github"></i></a>
+                                </p>
+                                <hr>
+                                <hr>
+                                <p class="image-responsive__overlay--set2">
+                                    <a href="https://codepen.io/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i>
+                                    <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <div class="profile__section-right">
+                        <div class="text-box">
+                            <div class="text-box__section text-box__section-default">
+                                <h4 class="text-box__section--title"> Who Am I</h4>
+                                <div  class="text-box__section--content">
+                                    <p>
+                                        Full Stack  Web Developer with a background in Psychology, special education and coaching . 
+                                        Trained at the University of Arizona Coding Bootcamp and earned a Certificate in Full Stack Web Development after a mentally/physically 
+                                        challenging  6 months. Innovative problem-solver passionate about developing apps; focused on mobile-first design 
+                                        and development of Blockchains and Dapps. 
+                                        Strengths in creativity, teamwork, 
+                                        and building projects from ideation to execution. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title">Mission</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                      Become a strong influencer, tutor and reliable code source for those intrested
+                                      in learning clean code and developing powerful applications that can change the way
+                                      we think as a whole. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title">My Skills</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                        I gained experience in the following: 
+                                        Html,CSS,Git,JavaScript/jQuery ,Web API'S ,Third-Party API's, Server-side APIs, Node.js ,Object, Oriented-Programming (OOP) ,Express.js
+                                        SQL,Object Relational Mapping (ORM), Model-View-Controller (MVC),NoSQL,Progressive Web Applications(PWA),React, MERN Stack( Mango, Express, React, Node ),Tailwinds CSS,
+                                        Handlebars,Restful Servers,JSON,GraphQl,Server
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Third Parallax Image with Contact Text -->
+    <div class="bgimg bgimg-3 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">HIRE ME</span>
+        </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">WHERE I Live</h3>
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                
+    
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mesa, AZ US
+                    <br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (480) 781 -8033
+                    <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: Peterdquinnsr@gmail.com
+                    <br>
+                </div>
+               
+
+
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <div class="w3-xlarge w3-section">
+            <a href="https://github.com/PeterdQuinn" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="" target="_blank"><i class="fa fa-stack-overflow w3-hover-opacity"></i></a>
+            <a href="" target="_blank"><i class="fa fa-codepen w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/peter-quinn-73ab78200/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <div>Peter Quinn&copy;</div>
+    </footer>
+
+    <script type="text/javascript" src="js/logic.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmNX29rk_tbFqoDWIyYCg5TglI2OP8Xnk&callback=myMap"></script>
+</body>
+
+</html>
